@@ -1,0 +1,33 @@
+.gridHome{
+    display: grid;
+    max-width: 960px;
+    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "imageOne noImg bigImage bigImage bigImage"
+                         "noImg vector bigImage bigImage bigImage"
+                         "imageThree imageThree bigImage bigImage bigImage"
+                         "imageThree imageThree imageFour imageFive noImg"
+                         "noImg noImg imageFour noImg noImg";
+
+}
+.imageOne{
+    grid-area: imageOne;
+}
+.noImg{
+    grid-area: noImg;
+}
+.bigImage{
+    grid-area: bigImage;
+}
+.vector{
+    grid-area: vector
+}
+.imageThree{
+    grid-area: imageThree;
+}
+.imageFour{
+    grid-area: imageFour;
+}
+.imageFive{
+    grid-area: imageFive;
+}
